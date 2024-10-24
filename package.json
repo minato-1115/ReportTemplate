@@ -6,17 +6,24 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "client": "npm run dev --prefix client",
+    "client": "npm run build --prefix client",
     "server": "npm start --prefix server",
     "dev": "concurrently \"npm run client\" \"npm run server\"",
     "format": "prettier --write \"{client,server}/src/**/*.{js,jsx,ts,tsx,css,scss,json,md}\"",
-    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "start": "node server/server.ts",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false && npm install --prefix client && npm run build --prefix client"
   },
   "devDependencies": {
     "concurrently": "^9.0.1",
     "prettier": "^3.3.3"
   },
   "dependencies": {
-    "@react-pdf/renderer": "^4.0.0"
-  }
+    "@react-pdf/renderer": "^4.0.0",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "20.17.0"
+    }
+  
 }
