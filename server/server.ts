@@ -4,7 +4,7 @@ const path = require('path');
 const { exec } = require('child_process');
 const fs = require('fs');
 const app = express();
-const port = 3001;
+const port = process.env.PORT||3001;
 const cors = require("cors")
 const os = require("os")
 
