@@ -16,6 +16,7 @@
     "@mui/material": "^6.1.2",
     "@mui/x-date-pickers": "^7.19.0",
     "@react-pdf/renderer": "^4.0.0",
+    "cors": "^2.8.5",
     "dayjs": "^1.11.13",
     "pdfjs-dist": "^4.7.76",
     "react": "^18.3.1",
