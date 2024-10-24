@@ -21,7 +21,7 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
-  "./client/src/**/*.{ts,tsx}",
+  "./client/**/*.{ts,tsx}",
   "./server/**/*.{ts,tsx}"
 ]
 }

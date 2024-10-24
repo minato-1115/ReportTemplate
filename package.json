@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "build:client": "tsc --project client/tsconfig.json",
-    "build:server": "tsc --project server/tsconfig.json",
-    "build": "npm run build:client && npm run build:server",
+  "build:server": "tsc --project server/tsconfig.json",
+  "build": "npm run build:client && npm run build:server",
     "lint": "eslint .",
     "preview": "vite preview",
     "client": "npm run build --prefix client",
