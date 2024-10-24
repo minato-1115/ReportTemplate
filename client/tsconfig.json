@@ -3,7 +3,8 @@
     "extends": "../tsconfig.json",
     "compilerOptions": {
       "jsx": "react-jsx",
-      "outDir": "./dist/client"
+      "outDir": "./dist/client",
+      "allowImportingTsExtensions": true
     },
     "include": ["./**/*.ts", "./**/*.tsx"]
   }
